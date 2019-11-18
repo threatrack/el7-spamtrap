@@ -5,7 +5,7 @@ it is high interactive it is configured to **not** send mail.
 
 This is based on <https://github.com/0x6d696368/el7-server>.
 
-Follow the install instructions of [el7-server]() to install:
+Follow the install instructions of [el7-server](https://github.com/0x6d696368/el7-server) to install:
 
 - `01_install_base.sh`
 - `02_install_ns1.sh` **without** running any post install configuration (to setup a local DNS for RBL queries)
@@ -21,6 +21,7 @@ The spam mails will then land in `/home/vmail/spamtrap.invalid/spamtrap/new/`.
 
 Optionally, you can run `/usr/local/sbin/el7-mx_add_user spamtrap@spamtrap.invalid`
 then you can connect via POP3s as user `spamtrap@spamtrap.invalid` with the password you configured in that command.
+**NOTE:** This requires proper SSL certificates to be setup.
 
 ## tl;dr:
 
