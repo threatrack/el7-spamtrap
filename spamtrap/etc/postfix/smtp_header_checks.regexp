@@ -1,0 +1,5 @@
+/^\s*Received:.*with ESMTPSA/ IGNORE
+/^\s*X-Originating-IP:/ IGNORE
+/^\s*X-Enigmail/ IGNORE
+/^\s*X-Mailer:/	IGNORE
+/^\s*User-Agent:/ IGNORE

@@ -1,0 +1,4 @@
+# allow account user@example.com to spoof for the whole example.com domain
+#/^(.*)@example.com$/	user@example.com
+# only allow exact SASL login name matches
+/^(.*)$/	${1}

@@ -1,0 +1,10 @@
+/^root@spamtrap\.invalid$/      spamtrap.invalid/root/
+/^root@.*$/     spamtrap.invalid/root/
+/^security@.*$/ spamtrap.invalid/root/
+/^hostmaster@.*$/       spamtrap.invalid/root/
+/^postmaster@.*$/       spamtrap.invalid/root/
+/^webmaster@.*$/        spamtrap.invalid/root/
+/^abuse@.*$/    spamtrap.invalid/root/
+/^dmarc-rua@.*$/        spamtrap.invalid/dmarc-rua/
+/^dmarc-ruf@.*$/        spamtrap.invalid/dmarc-ruf/
+/.*$/   spamtrap.invalid/spamtrap/

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# COPY CONFIGURATION FILES
+
+postmap /etc/postfix/vmaps
+
+systemctl restart postfix
+systemctl restart dovecot
+
