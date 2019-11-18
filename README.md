@@ -7,7 +7,7 @@ This is based on <https://github.com/0x6d696368/el7-server>.
 
 Follow the install instructions of [el7-server](https://github.com/0x6d696368/el7-server) to install:
 
-- `01_install_base.sh`
+- `01_install_base.sh` (**make sure to follow the instructions in <https://github.com/0x6d696368/el7-server> for SSH pub key placement**)
 - `02_install_ns1.sh` **without** running any post install configuration (to setup a local DNS for RBL queries)
 - `02_install_mx.sh` **without** running any post install configuration
 
