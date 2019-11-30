@@ -21,7 +21,8 @@ The spam mails will then land in `/home/vmail/spamtrap.invalid/spamtrap/new/`.
 
 Optionally, you can run `/usr/local/sbin/el7-mx_add_user spamtrap@spamtrap.invalid`
 then you can connect via POP3s as user `spamtrap@spamtrap.invalid` with the password you configured in that command.
-**NOTE:** This requires proper SSL certificates to be setup.
+**If you connect to POP3s via IP only you must change the `local_name <domain> {` line to `local <ip> {`.**
+This way dovecot will find and server the SSL certificate for SSL connections to the IP.
 
 ## tl;dr:
 
@@ -39,5 +40,8 @@ Then the spam ends up in `/home/vmail/spamtrap.invalid/spamtrap/new/`.
 
 For logging and debugging of the mail system see instructions in <https://github.com/0x6d696368/el7-server>.
 
+## Issues
+
+- Because the el7-server project script `el7-mx_add_user` doesn't use regex in vhosts and vmaps you receive a warning `warning: regexp map /etc/postfix/vmaps, line xx: ignoring unrecognized request`. This can be ignored, or you can remove the added (non-regex) lines from vhosts and vmaps. Because there is already a catch all the entries aren't needed anyway.
 
 
